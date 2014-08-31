@@ -1,0 +1,1 @@
+cmd_/home/notroot/android/bb-kernel/deploy/headers/include/uapi/.install := perl scripts/headers_install.pl /home/notroot/android/bb-kernel/deploy/headers/include/uapi arm  ; for F in ; do echo "\#include <asm-generic/$$F>" > /home/notroot/android/bb-kernel/deploy/headers/include/uapi/$$F; done; touch /home/notroot/android/bb-kernel/deploy/headers/include/uapi/.install
